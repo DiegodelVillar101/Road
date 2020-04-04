@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOON</title>
+</head>
+<body>
+
+    <section class="hero">
+        <img src="./img/bg.jpg" id="bg" alt="">
+        <img src="./img/moon.png" id="moon" alt="">
+        <img src="./img/mountain.png" id="mountain" alt="">
+        <img src="./img/road.png" id="road" alt="">
+        <h2 id="text">Moon Light</h2>
+    </section>
+
+    <section class="section">
+        <article class="article">
+            <h1>MOON TALK</h1>
+            <div class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Suscipit facilis voluptatum deserunt. Aliquid, autem, quidem 
+                 enim debitis illo, vel omnis deserunt est accusamus molestiae 
+                 corporis quisquam nesciunt vero quod labore. <br>
+
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Suscipit facilis voluptatum deserunt. Aliquid, autem, quidem 
+                 enim debitis illo, vel omnis deserunt est accusamus molestiae 
+                 corporis quisquam nesciunt vero quod labore.
+            </div>
+        </article>
+    </section>
+    <section class="bg"></section>
+    
+    <section class="section">
+        <article class="article">
+            <h1>MOON FOOD</h1>
+            <div class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Suscipit facilis voluptatum deserunt. Aliquid, autem, quidem 
+                 enim debitis illo, vel omnis deserunt est accusamus molestiae 
+                 corporis quisquam nesciunt vero quod labore. <br>
+                 
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Suscipit facilis voluptatum deserunt. Aliquid, autem, quidem 
+                 enim debitis illo, vel omnis deserunt est accusamus molestiae 
+                 corporis quisquam nesciunt vero quod labore.
+                </div>
+            </article>
+        </section>
+        
+        <section class="bg"></section>
+    <section class="section">
+        <article class="article">
+            <h1>MOON CHEESE</h1>
+            <div class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Suscipit facilis voluptatum deserunt. Aliquid, autem, quidem 
+                 enim debitis illo, vel omnis deserunt est accusamus molestiae 
+                 corporis quisquam nesciunt vero quod labore. <br>
+
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Suscipit facilis voluptatum deserunt. Aliquid, autem, quidem 
+                 enim debitis illo, vel omnis deserunt est accusamus molestiae 
+                 corporis quisquam nesciunt vero quod labore.
+            </div>
+        </article>
+    </section>
+    <section class="bg"></section>
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            bg.style.top = value * .5 + 'px';
+            moon.style.left= -value * .5 + 'px';
+            mountain.style.top= -value * .15 + 'px';
+            road.style.top= value * .15 + 'px';
+            text.style.top= value * 1 + 'px';
+        })
+    
+    </script>
+    
+</body>
+</html>
